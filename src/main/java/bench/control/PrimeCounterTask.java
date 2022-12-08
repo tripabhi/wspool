@@ -6,7 +6,7 @@ public class PrimeCounterTask extends RecursiveTask<Integer> {
 
     private final int start, end;
 
-    PrimeCounterTask(int start, int end) {
+    public PrimeCounterTask(int start, int end) {
         this.start = start;
         this.end = end;
     }

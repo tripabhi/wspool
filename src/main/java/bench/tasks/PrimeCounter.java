@@ -7,7 +7,7 @@ public class PrimeCounter extends RTask<Integer> {
 
     private final int start, end;
 
-    PrimeCounter(int start, int end) {
+    public PrimeCounter(int start, int end) {
         this.start = start;
         this.end = end;
     }

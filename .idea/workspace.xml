@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab3e689c-87be-4310-b4d7-278ac24456ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/Benchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/control/MergeSortTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/control/PrimeCounterTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/runner/BenchmarkRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/PrimeCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pool/FJTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pool/Pool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pool/RAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pool/RTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pool/WSPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pool/WorkerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bench/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/Benchmark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bench/control/PrimeCounterTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/control/PrimeCounterTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bench/runner/BenchmarkRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/runner/BenchmarkRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bench/tasks/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bench/tasks/PrimeCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/PrimeCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

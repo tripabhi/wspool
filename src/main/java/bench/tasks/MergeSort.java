@@ -53,7 +53,7 @@ public class MergeSort extends RAction {
         return this.array;
     }
 
-    private static boolean isSorted(int[] arr) {
+    public static boolean isSorted(int[] arr) {
         boolean sorted = true;
         for(int i = 1; i < arr.length; i++) {
             if(arr[i] < arr[i - 1]) {
