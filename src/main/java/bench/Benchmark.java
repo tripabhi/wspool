@@ -19,8 +19,22 @@ public class Benchmark {
         int threadCount = Integer.parseInt(args[1]);
         BenchmarkRunner runner = new BenchmarkRunner();
 
-        int iterations = 10;
-        IntStream.range(0, iterations).forEach(i -> runner.run(task, threadCount));
+        int warmup = 10, record = 10;
+        double average = 0.0f, averageControl = 0.0f;
+        for(int i = 0; i < warmup + record; i++) {
+            long[] t = runner.run(task, threadCount);
+            if(i >= warmup) {
+                average += t[0];
+                averageControl += t[1];
+            }
+        }
+
+        average /= record;
+        averageControl /= record;
+
         System.out.println("Benchmarking done");
+        System.out.println("Task : " + task + ", threads : " + threadCount);
+        System.out.printf("(%d, %.2f)", threadCount, average);
+        System.out.printf("(%d, %.2f)", threadCount, averageControl);
     }
 }

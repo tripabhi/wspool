@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab3e689c-87be-4310-b4d7-278ac24456ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bench/control/ArrayTransformTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bench/control/FibonacciTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/ArrayTransform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bench/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/Benchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bench/control/PrimeCounterTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/control/PrimeCounterTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bench/runner/BenchmarkRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/runner/BenchmarkRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bench/tasks/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bench/tasks/PrimeCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/PrimeCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pool/FJTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pool/FJTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +48,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/abhijittripathy/Documents/VT/CS5510/Project/wspool",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PrimeCounter">
+  <component name="RunManager" selected="Application.Benchmark">
+    <configuration name="Benchmark" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="bench.Benchmark" />
+      <module name="wspool.main" />
+      <option name="PROGRAM_PARAMETERS" value="Fibonacci 8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bench.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bench.tasks.MergeSort" />
       <module name="wspool.main" />

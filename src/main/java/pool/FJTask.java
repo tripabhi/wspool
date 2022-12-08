@@ -2,6 +2,8 @@ package pool;
 
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.VarHandle;
+import java.util.Collection;
+import java.util.List;
 import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.locks.LockSupport;
 
@@ -175,10 +177,6 @@ public abstract class FJTask<V> {
         return s;
     }
 
-    public final V invoke() {
-        return getResult();
-    }
-
     public static void invokeAll(FJTask<?> ...tasks) {
         int last = tasks.length - 1;
         for(int i = last; i >= 0; --i) {
@@ -204,6 +202,42 @@ public abstract class FJTask<V> {
                 break;
             }
         }
+    }
+
+
+    public static <T extends FJTask<?>> Collection<T> invokeAll(Collection<T> tasks) {
+        if(!(tasks instanceof List<?>)) {
+            invokeAll(tasks.toArray(new FJTask<?>[0]));
+            return tasks;
+        }
+
+        List<? extends FJTask<?>> tsks = (List<? extends FJTask<?>>) tasks;
+        int last = tasks.size() - 1;
+        for(int i = last; i >= 0; --i) {
+            FJTask<?> t;
+            t = tsks.get(i);
+            if(i == 0) {
+                int s;
+                if((s = t.doExec()) >= 0) {
+                    s = t.awaitDone();
+                }
+                break;
+            }
+            t.fork();
+        }
+
+        for(int i = 1; i <= last; i++) {
+            FJTask<?> t;
+            if((t = tsks.get(i)) != null) {
+                int s;
+                if((s = t.getStatus()) >= 0) {
+                    s = t.awaitDone();
+                }
+                break;
+            }
+        }
+
+        return tasks;
     }
 
     public final FJTask<?> fork() {
