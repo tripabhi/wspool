@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab3e689c-87be-4310-b4d7-278ac24456ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/control/ArrayTransformTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/control/FibonacciTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/ArrayTransform.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bench/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/Benchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bench/runner/BenchmarkRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/runner/BenchmarkRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pool/FJTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pool/FJTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +51,7 @@
     <configuration name="Benchmark" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="bench.Benchmark" />
       <module name="wspool.main" />
-      <option name="PROGRAM_PARAMETERS" value="Fibonacci 8" />
+      <option name="PROGRAM_PARAMETERS" value="MergeSort 8" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bench.*" />

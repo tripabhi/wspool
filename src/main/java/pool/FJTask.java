@@ -35,7 +35,7 @@ public abstract class FJTask<V> {
         return STATUS.compareAndSet(this, c, v);
     }
 
-    public boolean casAux(Node c, Node v) {
+    public boolean casHead(Node c, Node v) {
         return HEAD.compareAndSet(this, c, v);
     }
 
@@ -112,7 +112,7 @@ public abstract class FJTask<V> {
                 LockSupport.park();
                 parked = true;
             } else if(node != null) {
-               if((a = this.head) != null && casAux(node.next = a, node)) {
+               if((a = this.head) != null && casHead(node.next = a, node)) {
                     queued = true;
                     LockSupport.setCurrentBlocker(this);
                 }
@@ -150,7 +150,7 @@ public abstract class FJTask<V> {
      */
     private void signalWaiters() {
         for (Node a; (a = head) != null && a.ex == null; ) {
-            if (casAux(a, null)) {
+            if (casHead(a, null)) {
                 for (Thread t; a != null; a = a.next) {
                     if ((t = a.thread) != Thread.currentThread() && t != null)
                         LockSupport.unpark(t);
