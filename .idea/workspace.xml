@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab3e689c-87be-4310-b4d7-278ac24456ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/report_abhijittripathy.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pool/FJTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pool/FJTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bench/tasks/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bench/tasks/Fibonacci.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,11 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Benchmark">
     <configuration name="Benchmark" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="bench.Benchmark" />
